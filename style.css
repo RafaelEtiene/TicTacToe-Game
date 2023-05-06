@@ -24,6 +24,12 @@ h1 {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
+h3 {
+    font-size: 15px;
+    margin: 10px;
+}
+
 .gameBoard {
     padding-top: 50px;
     height: 300px;
@@ -45,6 +51,20 @@ h1 {
     user-select: none;
 }
 
+#restartBtn{
+    background-color: rgb(164, 230, 227);
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    color: rgba(6, 61, 59, 0.616);
+    border-radius: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
 .cell:nth-child(3n){
     border-right: none;
 }
@@ -54,4 +74,8 @@ h1 {
 
 .cell.highlight{
     background-color: rgba(95, 201, 197, 0.616);
+}
+
+.cell.normal{
+    background-color: rgba(169, 248, 244, 0.623);
 }
